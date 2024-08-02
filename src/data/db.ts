@@ -3,33 +3,33 @@ import type { MenuItem } from "../types"
 export const menuItems : MenuItem[] = [
     {
         "id": 1,
-        "name": "Pizza a la Leña Pequeña",
+        "name": "Pizza a la Leña - Pequeña",
         "price": 14
     },
     {
         "id": 2,
-        "name": "Pizza a la Leña Mediana",
+        "name": "Pizza a la Leña - Mediana",
         "price": 17
     },
     {
         "id": 3,
+        "name": "Pizza a la Leña - Grande",
+        "price": 20
+    },
+    {
+        "id": 4,
         "name": "Rebanada de Pan con Tomate",
         "price": 5
     },
     {
-        "id": 4,
+        "id": 5,
         "name": "Rebanada de Pastel de Chocolate",
         "price": 7
     },
     {
-        "id": 5,
-        "name": "Zumo de Naranja",
-        "price": 3
-    },
-    {
         "id": 6,
-        "name": "Pizza a la Leña Grande",
-        "price": 20
+        "name": "Rebanada de Pan gratinado de Queso",
+        "price": 5
     },
     {
         "id": 7,
@@ -38,18 +38,18 @@ export const menuItems : MenuItem[] = [
     },
     {
         "id": 8,
-        "name": "Zumo de Limón",
+        "name": "Zumo de Naranja",
         "price": 3
     },
     {
         "id": 9,
-        "name": "Tequila",
-        "price": 12
-    },
+        "name": "Zumo de Limón",
+        "price": 3
+    },    
     {
         "id": 10,
-        "name": "Rebanada de Pan gratinado de Queso",
-        "price": 5
+        "name": "Tequila",
+        "price": 12
     },
     {
         "id": 11,

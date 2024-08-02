@@ -8,8 +8,25 @@ export default function useOrder(){
     */
 
     const addItem = (item : MenuItem) => {
-        console.log(item)
+        
+        const itemExist = order.find(orderITem => orderITem.id === item.id) // buscar elemento en base a condicion
+        if (itemExist) {
+            // Encontrar el repetido, y añadirle uno a la cantidad
+            const updatedOrder = order.map(orderItem => orderItem.id === item.id 
+                ? {...orderItem, quantity: orderItem.quantity + 1} 
+                : orderItem
+            )
+
+            setOrder(updatedOrder)
+        } else {
+            const newItem = {...item, quantity: 1}
+            setOrder([...order, newItem])            
+        }        
+
     }
+    console.log(order);
+    
+    
 
     return {
         addItem
