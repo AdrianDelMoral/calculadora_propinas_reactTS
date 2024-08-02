@@ -7,11 +7,11 @@ export default function useOrder(){
        const [auth, setAuth] = useState<boolean>(false) // Es redundante si ya el valor inicial lo indica, se llama generic de boolean  si se lo indicamos
     */
 
-    
-    console.log(order);
-    
+    const addItem = () => {
+        console.log('agregando...')
+    }
 
-    return (
-        order
-    )
+    return {
+        addItem
+    }
 }
