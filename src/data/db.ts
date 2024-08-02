@@ -3,17 +3,17 @@ import type { MenuItem } from "../types"
 export const menuItems : MenuItem[] = [
     {
         "id": 1,
-        "name": "Pizza a la Leña - Pequeña",
+        "name": "Pizza a la Leña Pequeña",
         "price": 14
     },
     {
         "id": 2,
-        "name": "Pizza a la Leña - Mediana",
+        "name": "Pizza a la Leña Mediana",
         "price": 17
     },
     {
         "id": 3,
-        "name": "Pizza a la Leña - Grande",
+        "name": "Pizza a la Leña Grande",
         "price": 20
     },
     {
