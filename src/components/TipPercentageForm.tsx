@@ -1,3 +1,5 @@
+import type { Dispatch, SetStateAction } from "react"
+
 const tipOptions = [
     {
         id: 'tip-10',
@@ -16,7 +18,12 @@ const tipOptions = [
     },
 ]
 
-export default function TipPercentageForm() {
+type TipPercentageFormProps = {
+    /* setTip: React.Dispatch<React.SetStateAction<number>> */
+    setTip: Dispatch<SetStateAction<number>>
+}
+
+export default function TipPercentageForm({setTip} : TipPercentageFormProps) {
     return (
         <div>
             <h3 className="font-black text-2xl"></h3>
@@ -30,6 +37,8 @@ export default function TipPercentageForm() {
                             type="radio"
                             name="tip"
                             value={tip.value}
+                            //* el "+" lo convierte a number, para asi no de problemas, pero valueAsNumber en muchos casos sirve, pero en tipo radio no funciona
+                            onChange={e => setTip(+e.target.value)} 
                         />
                     </div>
                 ))}
