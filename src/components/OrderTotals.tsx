@@ -21,23 +21,22 @@ export default function OrderTotals({order, tip, placeOrder} : OrderTotalsProps)
     return (
         <>
             <div className="space-y-3">
-                <h2 className="font-black text-2xl">Total y Propina:</h2>
-                <p>Subtotal a pagar: {''}
+                <h2 className="font-black text-2xl text-teal-100">Total y Propina:</h2>
+                <p className="flex justify-between text-teal-100 py-3 border-b">Subtotal a pagar: {''}
                     <span className="font-bold">{formatCurrency(subtotalAmount)}</span>
                 </p>
                 
-                <p>Propina: {''}
+                <p className="flex justify-between text-teal-100 py-3 border-b">Propina: {''}
                     <span className="font-bold">{formatCurrency(tipAmount)}</span>
                 </p>
                 
-                <p>Total a pagar: {''}
+                <p className="flex justify-between text-teal-100 py-3">Total a pagar: {''}
                     <span className="font-bold">{formatCurrency(totalAmount)}</span>
                 </p>
-
             </div>
 
             <button
-                className="w-full bg-black rounded-lg cursor-pointer p-3 uppercase text-white font-bold mt-10 hover:bg-green-800 transition-all"
+                className="w-full bg-sky-950 rounded-lg cursor-pointer p-3 uppercase text-teal-100 font-bold mt-10 hover:bg-green-950 transition-all"
                 onClick={placeOrder}
             >
                 Guardar Pedido
